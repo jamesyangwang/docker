@@ -1,0 +1,21 @@
+version: '3.1'
+
+services:
+
+  mysql:
+    image: mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: passw0rd
+    network_mode: bridge
+    ports:
+      - "3306:3306"
+#    volumes:
+#      - $PWD/../.digisql_data/data:/var/lib/mysql
+
+  mysql_admin:
+    image: adminer
+    restart: always
+    network_mode: bridge
+    ports:
+      - 8060:8080
