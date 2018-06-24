@@ -3,11 +3,12 @@ version: '3.1'
 services:
 
   mysql:
-    image: mysql
+    image: mysql:5
+    container_name: mysql
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: passw0rd
-    network_mode: bridge
+#    network_mode: bridge
     ports:
       - "3306:3306"
 #    volumes:
@@ -15,7 +16,8 @@ services:
 
   mysql_admin:
     image: adminer
+    container_name: adminer
     restart: always
-    network_mode: bridge
+#    network_mode: bridge
     ports:
       - 8060:8080
