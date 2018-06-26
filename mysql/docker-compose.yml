@@ -14,10 +14,10 @@ services:
     volumes:
       - $PWD/data:/var/lib/mysql
 
-  mysql_admin:
-    image: adminer
-    container_name: adminer
-    restart: always
+#  mysql_admin:
+#    image: adminer
+#    container_name: adminer
+#    restart: always
 #    network_mode: bridge
-    ports:
-      - 8060:8080
+#    ports:
+#      - 8060:8080
