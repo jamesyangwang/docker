@@ -7,7 +7,11 @@ definer_user=mysql.sys
 definer_host=localhost
 suid=0
 with_check_option=0
+<<<<<<< HEAD
 timestamp=2018-06-26 04:51:49
+=======
+timestamp=2018-06-26 19:36:23
+>>>>>>> 41a0ecf81594160517b6648a776f14d2c60e4f90
 create-version=1
 source=SELECT * FROM sys.processlist WHERE conn_id IS NOT NULL AND command != \'Daemon\'
 client_cs_name=utf8
