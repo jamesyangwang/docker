@@ -11,13 +11,13 @@ services:
 #    network_mode: bridge
     ports:
       - "3306:3306"
-#    volumes:
-#      - $PWD/../.digisql_data/data:/var/lib/mysql
+    volumes:
+      - $PWD/data:/var/lib/mysql
 
-  mysql_admin:
-    image: adminer
-    container_name: adminer
-    restart: always
+#  mysql_admin:
+#    image: adminer
+#    container_name: adminer
+#    restart: always
 #    network_mode: bridge
-    ports:
-      - 8060:8080
+#    ports:
+#      - 8060:8080
